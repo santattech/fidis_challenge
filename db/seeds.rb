@@ -7,6 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 user = User.find_or_initialize_by(email: "santattech@gmail.com")
-user.password = "kreetisa"
-user.password_confirmation = "kreetisa"
+user.password = "1234$aA8"
+user.password_confirmation = "1234$aA8"
 user.save!
