@@ -64,7 +64,7 @@ Rails.application.configure do
 
   # Store files on Amazon S3.
   config.active_storage.service = :amazon
-  Rails.application.routes.default_url_options[:host] = 'https://warm-ridge-76161.herokuapp.com/'
+  Rails.application.routes.default_url_options[:host] = 'https://boiling-island-71155.herokuapp.com/'
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
