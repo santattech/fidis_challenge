@@ -2,7 +2,7 @@ class JsonWebToken
   ALGORITHM = 'HS256'
 
   def self.encode(payload)
-    JWT.encode(payload.merge(exp: 1.week.from_now.to_i), Rails.application.secrets.secret_key_base, ALGORITHM)
+    JWT.encode(payload.merge(exp: 2.days.from_now.to_i), Rails.application.secrets.secret_key_base, ALGORITHM)
   end
 
   def self.decode(token)
